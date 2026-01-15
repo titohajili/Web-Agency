@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
 const font = Rubik({
   weight:["300", "400", "500", "600", "700", "800", "900"],
@@ -24,7 +25,7 @@ export default function RootLayout({
         className={`${font.className} antialiased`}
       >
         <Provider>
-
+          <ResponsiveNav/>
           {children}
         </Provider>
       </body>
