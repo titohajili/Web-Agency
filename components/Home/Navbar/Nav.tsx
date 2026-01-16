@@ -1,13 +1,30 @@
+"use client"
 import Logo from '@/components/Helper/Logo'
 import ThemeToggler from '@/components/Helper/ThemeToggler'
 import { NavLinks } from '@/constant/constant'
 import Link from 'next/link'
 import React from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
+import { useEffect, useState } from 'react'
 
-const Nav = () => {
+type Props = {
+    onpenNavHandler:()=>void
+}
+
+const Nav = ({onpenNavHandler}: Props) => {
+    const [navBg, setNavBg] = useState(false)
+
+    useEffect(()=>{
+        const handler =()=>{
+            if(window.scrollY > 90) setNavBg(true)
+            else setNavBg(false)
+        }
+        window.addEventListener('scroll', handler)
+        return ()=> window.removeEventListener('scroll', handler)
+    },[])
+
   return (
-    <div className='transition-all duration-200 h-[12vh] z-100 fixed w-full'>
+    <div className={`transition-all duration-200 h-[12vh] z-100 fixed w-full ${navBg ? 'dark:bg-gray-900 bg-blue-950 shadow-md': 'fixed '}`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
         {/* LOGO */}
         <Logo/>
@@ -34,7 +51,7 @@ const Nav = () => {
             {/* Theme Toggler */}
             <ThemeToggler/>
             {/* Hamburger */}
-            <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+            <HiBars3BottomRight onClick={onpenNavHandler} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
         </div>
 
       </div>
