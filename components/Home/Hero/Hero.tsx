@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
 import { useEffect, useRef } from 'react'
+import { GiSparkles } from 'react-icons/gi';
+import { TypeAnimation } from 'react-type-animation';
 
 
 
@@ -76,7 +78,32 @@ const Hero = () => {
   return (
     <div className='relative min-h-screen flex justify-center items-center overflow-hidden'>
       <canvas ref={canvasRef}  className='absolute inset-0 bg-linear-to-br from-blue-900 via-purple-900 to-pink-900 dark:from-gray-950 dark:via-gray-900 dark:to-gray-900'/>
+      <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+        <div>
+          <div className='inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full mb-8'>
+            <GiSparkles className='h-5 w-5 text-yellow-400'/>
+            <span className='text-white font-medium'>Welcome to WebdevWarriors</span>
+          </div>
+        </div>
+        {/* typewriter text */}
+        <h1 className='text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6'>
+          <TypeAnimation
+           sequence={[
+            "We Create Magic",
+            2000,
+            "We Build Dreams",
+            2000,
+            "We Design Future",
+            2000
+           ]}
+           wrapper='span'
+           speed={50}
+           repeat={Infinity}
+          />
+        </h1>
+      </div>
     </div>
+
   )
 }
 
