@@ -1,6 +1,8 @@
 "use client"
+import Link from 'next/link';
 import React from 'react'
 import { useEffect, useRef } from 'react'
+import { BsArrowRight } from 'react-icons/bs';
 import { GiSparkles } from 'react-icons/gi';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -101,7 +103,29 @@ const Hero = () => {
            repeat={Infinity}
           />
         </h1>
+        {/* description */}
+        <p className='text-base sm:text-xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed'>
+          When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetroble.
+        </p>
+        {/* buttons */}
+        <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+            <Link href={"#"} className='group inline-flex items-center justify-center space-x-2 bg-white dark:bg-white text-gray-900 dark:text-gray-900 px-8  py-4 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl'>
+              <span>Get Started</span>
+              <BsArrowRight className='h-5 w-5 group-hover:translate-x-1 transition-transform'/>
+            </Link>
+
+            <Link href={'#'} className='inline-flex items-center justify-center space-x-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105'>
+              <span>Contact Us</span>
+            </Link>
+        </div>
       </div>
+
+          {/* animated mouse */}
+          <div className='absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce'>
+            <div className='w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2'>
+              <div className='w-1 h-3 bg-white rounded-full'></div>
+            </div>
+          </div>
     </div>
 
   )
