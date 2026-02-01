@@ -1,6 +1,7 @@
 
 import About from './About/About'
 import ClientReview from './ClientReview/ClientReview'
+import Contact from './Contact/Contact'
 import Hero from './Hero/Hero'
 import Order from './Order/Order'
 import Price from './Price/Price'
@@ -19,6 +20,7 @@ const Home = () => {
       <Price/>
       <ClientReview/>
       <Order/>
+      <Contact/>
     </div>
   )
 }
