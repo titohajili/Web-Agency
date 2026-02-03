@@ -17,7 +17,10 @@ const Contact = () => {
                 <input type="text" placeholder='Phone Number' className='border-2 border-gray-200 px-4 outline-none py-3 rounded-full' />
                 <input type="text" placeholder='Website' className='border-2 border-gray-200 px-4 outline-none py-3 rounded-full' />
             </div>
-            <textarea rows={9} placeholder='Your Message Here' className='mt-10 w-full border-2 outline-none border-gray-200 px-4 py-3 rounded-lg'></textarea>
+            <textarea 
+            rows={9}
+            placeholder='Your Message Here'
+            className='mt-10 w-full border-2 outline-none border-gray-200 px-4 py-3 rounded-lg'></textarea>
             <button className='mt-10 text-white rounded-full px-14 py-4 cursor-pointer hover:bg-pink-700 bg-pink-600 transition-all duration-200'>Submit Now</button>
         </div>
       </div>
