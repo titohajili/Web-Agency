@@ -8,7 +8,9 @@ const WhyChoose = () => {
     <div className='py-20'>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
         {/* Text content */}
-        <div>
+        <div data-aos="fade-left" 
+             data-aos-anchor-placement="top-center"
+             dats-aos-delay="0">
             <h1 className='text-red-500 dark:text-red-300 font-medium'>Why Choose</h1>
             <h1 className='text-2xl md:text-4xl lg:text-5xl leading-8 md:leading-12 lg:leading-14 text-gray-900 dark:text-gray-100 font-bold tracking-wider'>Specialist in aviding clients on financial challenges</h1>
             <p className='mt-4 text-gray-500 dark:text-gray-300 leading-7'>Corporate headquarters is the part of a corporate structure that deals with important tasks such as strategic planning,</p>
@@ -46,7 +48,9 @@ const WhyChoose = () => {
             </div>
         </div>
         {/* Image content */}
-        <div>
+        <div data-aos="fade-right" 
+            data-aos-anchor-placement="top-center"
+            dats-aos-delay="100">
             <Image src={'/images/wc.png'} alt='img' width={1000} height={1000} />
         </div>
       </div>

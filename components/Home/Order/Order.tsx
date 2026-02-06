@@ -2,7 +2,11 @@ import React from 'react'
 
 const Order = () => {
   return (
-    <div className='py-20 bg-[#eff3f6] dark:bg-gray-900'>
+    <div
+      data-aos="zoom-in" 
+      data-aos-anchor-placement="top-center"
+      dats-aos-delay="0"
+    className='py-20 bg-[#eff3f6] dark:bg-gray-900'>
         <div>
             <h1 className='text-red-500 dark:text-red-300 font-semibold text-center'>Booking</h1>
             <h1 className='text-center text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-gray-100 mt-4 font-bold tracking-wider'>Book service online</h1>

@@ -6,11 +6,11 @@ const About = () => {
     <div className='py-24 dark:bg-gray-950'>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16'>
         {/* Image content */}
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placement="top-center">
             <Image src={'/images/a1.png'} alt='img' width={500} height={500} />
         </div>
         {/* Text Content */}
-        <div>
+        <div  data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200">
             <h1 className='text-pink-800 dark:text-purple-600 font-medium'>About us</h1>
             {/* Heading */}
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white mt-2'>We Are The Leader in Web Design</h1>

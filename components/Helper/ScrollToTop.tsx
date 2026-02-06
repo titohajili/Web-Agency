@@ -28,7 +28,7 @@ const ScrollToTop = () => {
         <button className='bg-blue-700 cursor-pointer text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none' onClick={scrollToTop}>
             <FaArrowUp />
         </button>
-      )}
+      )} 
     </div>
   )
 }

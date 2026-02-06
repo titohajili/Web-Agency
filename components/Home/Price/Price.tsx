@@ -11,19 +11,27 @@ const Price = () => {
 
       <div className='w-[80%] mt-16 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 items-center'>
         {/* price cards */}
-        <div>
+        <div data-aos="fade-right" 
+      data-aos-anchor-placement="top-center"
+      dats-aos-delay="0">
           <PriceCard price="20" title="Optimized & SEO"/>
         </div>
 
-        <div>
+        <div data-aos="fade-right" 
+      data-aos-anchor-placement="top-center"
+      dats-aos-delay="100">
           <PriceCard price="50" title="Designing"/>
         </div>
 
-        <div>
+        <div data-aos="fade-right" 
+      data-aos-anchor-placement="top-center"
+      dats-aos-delay="200">
           <PriceCard price="60" title="Development"/>
         </div>
 
-        <div>
+        <div data-aos="fade-right" 
+      data-aos-anchor-placement="top-center"
+      dats-aos-delay="300">
           <PriceCard price="80" title="Supporting"/>
         </div>
       </div>

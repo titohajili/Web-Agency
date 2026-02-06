@@ -9,7 +9,11 @@ const Contact = () => {
         <h1 className='text-center text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-fuchsia-100 mt-4 font-bold tracking-wider'>Join Our Workplace Around The World</h1>
       </div>
       <div className='w-[90%]  md:w-[80%] lg:w-[70%] mx-auto'>
-        <Image src={"/images/map.png"} alt='img' width={900} height={900} className='mx-auto mt-16'/>
+        <Image src={"/images/map.png"} alt='img' width={900} height={900} className='mx-auto mt-16'
+        data-aos="zoom-in" 
+        data-aos-anchor-placement="top-center"
+        dats-aos-delay="0"
+        />
         <div className='mt-16'>
             <h1 className='text-lg font-semibold'>Send Message</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
